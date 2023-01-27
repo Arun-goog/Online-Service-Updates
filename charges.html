@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>List of All Services & Its Service Charges</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">Service Name</th>
+    <th style="width:40%;">Service Charge</th>
+  </tr>
+  
+  <tr>
+    <td>Photostat A4 single side (01)</td>
+    <td>5/-</td>
+  </tr>
+  <tr>
+    <td>Photostat A4 double side (02)</td>
+    <td>7/-</td>
+  </tr>
+  <tr>
+    <td>Photostat A4 single side colour (03)</td>
+    <td>20/-</td>
+  </tr>
+  <tr>
+    <td>Photostat Legal single side (04)</td>
+    <td>6/-</td>
+  </tr>
+  <tr>
+    <td>Photostat Legal double side (05)</td>
+    <td>8/-</td>
+  </tr>
+  <tr>
+    <td>Photostat Legal single side colour (06)</td>
+    <td>20/-</td>
+  </tr>
+  <tr>
+    <td>Photostat A3 single side (07)</td>
+    <td>10/-</td>
+  </tr>
+  <tr>
+    <td>Photostat A3 double side (08)</td>
+    <td>15/-</td>
+  </tr>
+  <tr>
+    <td>Photostat A3 single side colour (09)</td>
+    <td>40/-</td>
+  </tr>
+  <tr>
+    <td>Printout A4 (10)</td>
+    <td>10/-</td>
+  </tr>
+  <tr>
+    <td>Printout A4 Color (11)</td>
+    <td>30/-</td>
+  </tr>
+  <tr>
+    <td>Printout A3 (12)</td>
+    <td>20/-</td>
+  </tr>
+  <tr>
+    <td>Printout A3 color (13)</td>
+    <td>40/-</td>
+  </tr>
+  <tr>
+    <td>Lamination ID Card (14)</td>
+    <td>40/-</td>
+  </tr>
+  <tr>
+    <td>Lamination RC Size (15)</td>
+    <td>50/-</td>
+  </tr>
+  <tr>
+    <td>Lamination A4 Size (16)</td>
+    <td>80/-</td>
+  </tr>
+  <tr>
+    <td>Lamination Legal Size (17)</td>
+    <td>100/-</td>
+  </tr>
+  <tr>
+    <td>Lamination A3 Size (18)</td>
+    <td>120/-</td>
+  </tr>
+  <tr>
+    <td>ID Card PVC (19)</td>
+    <td>100/-</td>
+  </tr>
+  <tr>
+    <td>DTP A4 per Page (20)</td>
+    <td>100/-</td>
+  </tr>
+  <tr>
+    <td>DTP Legal per Page (21)</td>
+    <td>120/-</td>
+  </tr>
+  <tr>
+    <td>DTP Agreement Typing (Min. Charge) (22)</td>
+    <td>250/-</td>
+  </tr>
+  <tr>
+    <td>DTP Printing to Stamp Paper (Per Page) (23)</td>
+    <td>60/-</td>
+  </tr>
+  <tr>
+    <td>Scanning Per Paper (24)</td>
+    <td>10/-</td>
+  </tr>
+  <tr>
+    <td>Spiral Binding ( Minimum) (25)</td>
+    <td>50/-</td>
+  </tr>
+  <tr>
+    <td>Fund Tranfer </td>
+    <td>Mini. 20/- + (Extra 10/- per 1000/-) (26)</td>
+  </tr>
+  <tr>
+    <td>Aadhaar PVC (27)</td>
+    <td>100/-</td>
+  </tr>
+  <tr>
+    <td>Aims Registration (28)</td>
+    <td>70/-</td>
+  </tr>
+  <tr>
+    <td>Birth Registration (29)</td>
+    <td>100/-</td>
+  </tr>
+  <tr>
+    <td>Caste Certificate (30)</td>
+    <td>60/-</td>
+  </tr>
+  <tr>
+    <td>Community Certificate (31)</td>
+    <td>60/-</td>
+  </tr>
+  <tr>
+    <td>Driving Licence Duplicate (32)</td>
+    <td>nil</td>
+  </tr>
+  <tr>
+    <td>Employment Registration (33)</td>
+    <td>100/-</td>
+  </tr>
+  <tr>
+    <td>Employment Renewal (34)</td>
+    <td>50/-</td>
+  </tr>
+  <tr>
+    <td>Employment Special Renewal (35)</td>
+    <td>30/-</td>
+  </tr>
+  <tr>
+    <td>E-shramCard(with PVC) (36)</td>
+    <td>100/-</td>
+  </tr>
+  <tr>
+    <td>KSEB Newconnection (37)</td>
+    <td>100/-</td>
+  </tr>
+  <tr>
+    <td>Land Tax (38)</td>
+    <td>Min. 20/- </td>
+  </tr>
+  <tr>
+    <td>Marriage Registration (39)</td>
+    <td>100/-</td>
+  </tr>
+  <tr>
+    <td>None-creamy Layer Certificate (40)</td>
+    <td>60/-</td>
+  </tr>
+  <tr>
+    <td>One and Same Certificate (41)</td>
+    <td>60/-</td>
+  </tr>
+  <tr>
+    <td>PSC Registration (42)</td>
+    <td>100/-</td>
+  </tr>
+  <tr>
+    <td>SSC Registration (43)</td>
+    <td>100/-</td>
+  </tr>
+  <tr>
+    <td>SSC Examination Apply (44)</td>
+    <td>70/-</td>
+  </tr>
+  <tr>
+    <td>UPSC Registration (45)</td>
+    <td>100/-</td>
+  </tr>
+  <tr>
+    <td>Ration PVC (46)</td>
+    <td>100/-</td>
+  </tr>
+  <tr>
+    <td>Sabarimal Booking (47)</td>
+    <td>30/Person</td>
+  </tr>
+  <tr>
+    <td>Special Permit for Vehicle (48)</td>
+    <td>30/Person</td>
+  </tr>
+  <tr>
+    <td>Voters ID New (49)</td>
+    <td>100/-</td>
+  </tr>
+  <tr>
+    <td>Building Tax (50)</td>
+    <td>Min.20/-</td>
+  </tr>
+  <tr>
+    <td>Pravasi Registration (51)</td>
+    <td>100/-</td>
+  </tr>
+  <tr>
+    <td>Pravasi Kshemanidhi (52)</td>
+    <td>0/-</td>
+  </tr>
+  <tr>
+    <td>KSEB Bill Payment (53)</td>
+    <td>0/-</td>
+  </tr>
+  <tr>
+    <td>Email service (54)</td>
+    <td>20/-</td>
+  </tr>
+  <tr>
+    <td>Biodata (55)</td>
+    <td>Normal-50/- <br> Advanced - 100/-</td>
+  </tr>
+  <tr>
+    <td>Camera Fine Payment (56)</td>
+    <td>0/-</td>
+  </tr>
+  <tr>
+    <td>Egrants Scholorship (57)</td>
+    <td>100/-</td>
+  </tr>
+  <tr>
+    <td>Pre-matric Scholorship (58)</td>
+    <td>100/-</td>
+  </tr>
+  <tr>
+    <td>Post-matric Scholorship (59)</td>
+    <td>100/-</td>
+  </tr>
+  <tr>
+    <td>PCC (Police Clearance Certificate) (60)</td>
+    <td>/-</td>
+  </tr>
+  <tr>
+    <td>Food Safety Licence (61)</td>
+    <td>0/-</td>
+  </tr>
+  <tr>
+    <td>Aims Registration (62)</td>
+    <td>70/-</td>
+  </tr>
+  <tr>
+    <td>Aims Land Verification (63)</td>
+    <td>Min.20/-</td>
+  </tr>
+  <tr>
+    <td>PM Kisan Registration (64)</td>
+    <td>100/-</td>
+  </tr>
+  <tr>
+    <td>Plus one Allotment (65)</td>
+    <td>100/-</td>
+  </tr>
+  <tr>
+    <td>Pancard (66)</td>
+    <td>250/-</td>
+  </tr>
+  <tr>
+    <td>Passport(67)</td>
+    <td>1800/-</td>
+  </tr>
+  <tr>
+    <td>Income Certificate (68)</td>
+    <td>60/-</td>
+  </tr>
+  <tr>
+    <td>Possession Certificate (69)</td>
+    <td>60/-</td>
+  </tr>
+  <tr>
+    <td>Encumbrance (Kudikkadam) (70)</td>
+    <td>Fee + Min. 100/-</td>
+  </tr>
+  <tr>
+    <td>Account Opening (71)</td>
+    <td>0/-</td>
+  </tr>
+  <tr>
+    <td>University Fee Payment (72)</td>
+    <td>Min.30/-</td>
+  </tr>
+  <tr>
+    <td>Hallticket Download (73)</td>
+    <td>20/-</td>
+  </tr>
+  <tr>
+    <td>NEET Application (74)</td>
+    <td>0/-</td>
+  </tr>
+  <tr>
+    <td>Pension (75)</td>
+    <td>100/-</td>
+  </tr>
+  <tr>
+    <td>Tailoring Kshemanidhi Payment (76)</td>
+    <td>Min.20/-</td>
+  </tr>
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
